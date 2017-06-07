@@ -9,7 +9,6 @@ $(document).ready(function() {
 	})
 
 	$('.box').mouseup(function() {
-		alert('h')
 		isDragging = false;
 	})
 
