@@ -44,6 +44,21 @@ div div {
 .yellow {
   background: yellow;
 }
+.teal {
+  background: teal;
+}
+.brown {
+  background: brown;
+}
+.orange {
+  background: orange;
+}
+.purple {
+  background: purple;
+}
+.yellow {
+  background: yellow;
+}
 
 .pallette-white {
   background: white;
@@ -84,6 +99,33 @@ div div {
 
 .pallette-blue {
   background: blue;
+  height: 2%;
+  width: 1%;
+  padding: 10px;
+}
+
+.pallette-teal {
+  background: teal;
+  height: 2%;
+  width: 1%;
+  padding: 10px;
+}
+.pallette-orange {
+  background: orange;
+  height: 2%;
+  width: 1%;
+  padding: 10px;
+}
+
+.pallette-purple {
+  background: purple;
+  height: 2%;
+  width: 1%;
+  padding: 10px;
+}
+
+.pallette-brown {
+  background: brown;
   height: 2%;
   width: 1%;
   padding: 10px;

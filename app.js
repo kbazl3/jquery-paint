@@ -32,8 +32,25 @@ $(document).ready(function() {
 		color = "white";
 	})
 
+	$("#teal").on("click", function() {
+		color = "teal";
+	})
+
+	$("#brown").on("click", function() {
+		color = "brown";
+	})
+
+	$("#orange").on("click", function() {
+		color = "orange";
+	})
+
+	$("#purple").on("click", function() {
+		color = "purple";
+	})
+
 
 	$('.box').on('click', function() {
+		console.log(color);
 		$(this).addClass(color)
 	});
 
@@ -50,7 +67,6 @@ $(document).ready(function() {
 	});
 
 	$('.box').on('mouseover', function() {
-		console.log("hitting");
 		if (isDragging) {
 			$(this).addClass(color);
 		}
