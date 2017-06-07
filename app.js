@@ -2,6 +2,16 @@
 $(document).ready(function() {
 
 	let color;
+	let isDragging = false;
+
+	$('.box').mousedown(function() {
+		isDragging = true;
+	})
+
+	$('.box').mouseup(function() {
+		alert('h')
+		isDragging = false;
+	})
 
 	$("#red").on("click", function() {
 		color = "red";
@@ -24,13 +34,28 @@ $(document).ready(function() {
 	})
 
 
-	$('.box').on('mouseover', function() {
+	$('.box').on('click', function() {
 		$(this).addClass(color)
 	});
+
+	$('.box').on('mousedown', function() {
+		$(this).addClass(color)
+	});
+
+	$(".box").on('dblclick', function() {
+		$(this).removeClass(color);
+	})
 
 	$(".reset").on("click", function() {
 		$(".box").addClass("black");
 	});
+
+	$('.box').on('mouseover', function() {
+		console.log("hitting");
+		if (isDragging) {
+			$(this).addClass(color);
+		}
+	})
 
 
 
